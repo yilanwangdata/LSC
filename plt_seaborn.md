@@ -202,7 +202,7 @@ for sp in range(0,6):
 plt.legend(loc='upper right')
 plt.show()
 ```
-seaborn code
+seaborn code  
 ```
 import seaborn as sns
 import numpy as np
