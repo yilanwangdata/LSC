@@ -1,4 +1,4 @@
-# some d3 code to do visualization 
+some d3 code to do visualization 
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -174,8 +174,6 @@ secondGroups.append("rect")
 	.attr("width",100)
 	.attr("height",50)
 	.attr("class","secondLevelRect");
-
-
 secondGroups.selectAll("circle")
 	.data(function(d){ return d; })
 	.enter().append("circle")
@@ -206,8 +204,6 @@ var nestedData = d3.nest()
 console.log(nestedData);
 
     });
-
-
 d3.tsv("data.tsv")
     .row(function(d){ return {month: parseDate(d.month), price:Number(d.price.trim().slice(1))}; })
     .get(function(error,data){
@@ -229,8 +225,6 @@ d3.xml("data.xml").get(function(error,data){
 var xmlLetter = data.documentElement.getElementsByTagName("letter");
 var letterNodes = d3.select(data).selectAll("letter")._groups[0][0];
 });
-
-
 d3.text("test.txt").get(function(error, data){
 
 var myTabPositions = [];
