@@ -843,6 +843,8 @@ lda = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=dictionary, num_top
 print (lda.print_topic(2, topn=5))
 for topic in lda.print_topics(num_topics=5, num_words=5):
     print (topic[1])
+```
+
 
 
 
