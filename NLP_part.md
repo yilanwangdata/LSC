@@ -1,4 +1,4 @@
-part of code of NLP
+part of code of NLP from several Jupyters and Eclipse
 ```
 import os
 import re
