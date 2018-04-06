@@ -52,12 +52,11 @@ d3.select(window).on("resize",callFunction);
         .enter().append("path")
                   .attr("d",function(d){ return "M"+d.join("L")+"Z"; })
                   .on("mousemove",function(d){
+		     tooltip.style("opacity","1")
+                    .style("left",d[0][0]+"px")
+		    .style("top",d[0][1]+"px");									
 											
-											tooltip.style("opacity","1")
-											.style("left",d[0][0]+"px")
-											.style("top",d[0][1]+"px");
-
-											tooltip.html("Number of sides: "+d.length);
+      tooltip.html("Number of sides: "+d.length);
 
       svg.append("g").attr("class","fuel")
       .selectAll("circle")
